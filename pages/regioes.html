@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A beleza de "The Legend of Zelda: Breath of the Wild"</title>
+    <link rel="icon" type="image/png" href="imagens/TriforceLogoV2.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../plugins/bxslider.css">
+    <link rel="stylesheet" href="../plugins/bxslider.min.js">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../plugins/magnific-popup.js"></script>
+</head>
+
+<body id="pag-regioes">
+    <main> 
+        <header id="headerLogo">
+            <a href="../index.html"><img src="../imagens/AlmostWhiteBotwLogo.png" alt="LogoBotw"></a>
+        <nav id="menu-paginas" class="ativo">
+            <ul>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="trailers.html">Trailers</a></li>
+                <li><a href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-breath-of-the-wild-switch/">Site Oficial</a></li>
+                <li><a href="sobremim.html">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="regioes-mapa" class="RegionsBotw">
+        <div>
+            <h2 class="titulo">Regiões</h2>
+            <div id="hyrule">
+                <a href="../imagens/regioesp/HebraRegionP.png"><img src="../imagens/regioesg/HebraRegionG.png" alt="HebraRegionG">
+                </a>
+                <a href="../imagens/regioesp/GerudoRegionP.png"><img src="../imagens/regioesg/GerudoRegionG.png" alt="GerudoRegionG">
+                </a>
+                <a href="../imagens/regioesp/LanaryuRegionP.png"><img src="../imagens/regioesg/LanaryuRegionG.png" alt="LanaryuRegionG">
+                </a>
+                <a href="../imagens/regioesp/EldinRegionP.png"><img src="../imagens/regioesg/EldinRegionG.png" alt="EldinRegionG">
+                </a> 
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer id="footerScroll">       
+        <p>Este site foi desenvolvido pelo aluno Gabriel Dantas Magalhães de Queiroz durante os seus estudos no primeiro período da disciplina "Introdução a tecnologia WEB"
+            <br>Paulo Afonso - Bahia - Brasil     
+        </p>
+    </footer>
+    <script> 
+        $('#regioes-mapa #hyrule').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+    });
+    </script>
+</body>
+</html>

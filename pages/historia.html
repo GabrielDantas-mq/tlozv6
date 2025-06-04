@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A beleza de The Legend of Zelda: Breath of the Wild</title>
+  <link rel="icon" type="image/png" href="../imagens/TriforceLogoV2.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../plugins/bxslider.css">
+  <link rel="stylesheet" href="../plugins/bxslider.min.js">
+  <script src="../plugins/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="../plugins/magnific-popup.js"></script>
+</head>
+
+<body id="pag-historia">
+  <header id="headerLogo">
+    <a href="../index.html">
+      <img src="../imagens/AlmostWhiteBotwLogo.png" alt="Logo do site The Legend of Zelda: Breath of the Wild">
+    </a>
+    <nav id="menu-paginas" class="ativo">
+      <ul>
+        <li><a href="personagens.html">Personagens</a></li>
+        <li><a href="regioes.html">Regiões</a></li>
+        <li><a href="trailers.html">Trailers</a></li>
+        <li><a href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-breath-of-the-wild-switch/" target="_blank" rel="noopener noreferrer">Site Oficial</a></li>
+        <li><a href="sobremim.html">Sobre Mim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="slides-historia">
+            <ul>
+                <li><img src="../imagens/imagensFundos/LinkXGanon.jpg" alt="LinkXGanon"></li>
+                <li><img src="../imagens/imagensFundos/ZeldaUsingTriforce.jpg" alt="ZeldaTriforceXGanon"></li>
+                <li><img src="../imagens/imagensFundos/AllVsGanonResize.png" alt="AllXGanon"></li>
+            </ul>
+            
+            <section id="historia-botw" class="conteudo">
+        <div class="containerr">
+            <h2 class="titulos">História</h2>
+            <p><strong>Há 10 mil anos, o povo de Hyrule previu o retorno de uma  terrível força maligna: a Calamidade Ganon, uma encarnação do ódio e do caos.  Antecipando essa ameaça, as civilizações antigas usaram alta tecnologia para criar quatro Bestas Divinas e um exército de Guardiões mecânicos. Liderados por uma princesa com o poder sagrado da Triforce e um guerreiro escolhido pelo destino, eles derrotaram Ganon e selaram seu poder. Milênios depois, a história se repetiu, forçando o povo de Hyrule a repetir o plano com a união da Princesa Zelda, de Link, seu guardião real e dos quatro atuais campeões: Mipha, dos Zora; Daruk, dos Goron; Revali, dos Rito e Urbosa, dos Gerudo. Cada um pilotaria uma das Bestas Divinas. Entretanto, Ganon também tinha um plano, ele corrompeu as Bestas Divinas e os Guardiões, matando os campeões e dizimando o reino. Link foi mortalmente ferido, e Zelda, com seu poder finalmente despertando, usou a Triforce para selar Link em sono por 100 anos, enquanto ela própria enfrentava Ganon sozinha, mantendo-o contido no Castelo de Hyrule. Cem anos depois, Link desperta sem memória, guiado por uma voz misteriosa (a de Zelda). Aos poucos, ele descobre a verdade sobre a Calamidade, os campeões caídos e sua missão: derrotar Ganon e restaurar a paz no reino.</strong><br></p>  
+        </div>
+
+    </section>
+
+        </div>
+    </div>
+
+    
+  </main>
+
+  <footer>
+    <p>
+      Este site foi desenvolvido pelo aluno Gabriel Dantas Magalhães de Queiroz durante os seus estudos no primeiro período da disciplina "Introdução à Tecnologia Web".
+      <br>Paulo Afonso - Bahia - Brasil
+    </p>
+  </footer>
+
+  <script>
+  $(document).ready(function () {
+    $("#slides-historia ul").bxSlider({
+      mode: 'horizontal',
+      captions: true,
+      slideWidth: 800,
+      adaptiveHeight: true,
+      responsive: true,
+      auto: true,
+      pause: 4000,
+      speed: 800,
+      controls: true,
+      autoControls: false
+    });
+
+    $('#fotos #galeria').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      closeOnContentClick: false,
+      closeBtnInside: false,
+      mainClass: 'mfp-with-zoom mfp-img-mobile',
+      image: {
+        verticalFit: true
+      },
+      gallery: {
+        enabled: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300,
+        opener: function (element) {
+          return element.find('img');
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
